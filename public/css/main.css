@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 10px;
+}
+body {
+  font-family: sans-serif;
+  background-image: url(../images/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem 10px;
+}
+header > a {
+  text-decoration: none;
+  font-size: 3.5rem;
+  color: aliceblue;
+}
+header nav {
+  display: flex;
+  gap: 1.6rem;
+  font-size: 2rem;
+}
+header nav a {
+  color: aliceblue;
+  text-decoration: none;
+  cursor: pointer;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+/*main page style*/
+main {
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.4rem;
+  padding: 2rem 10rem;
+}
+main > * {
+  margin-bottom: 4rem;
+}
+main p {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*about page*/
+.about-main h2 {
+  font-size: 3.4rem;
+}
+/* login page */
+.login- main form {
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 400px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+main form input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font: inherit;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  color: aliceblue;
+  border-radius: 3px;
+}
+main form input :active {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: aliceblue;
+}
+main form input[type="submit"] {
+  background-color: aliceblue;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  color: aliceblue;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem 10 rem;
+}

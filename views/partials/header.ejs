@@ -1,0 +1,13 @@
+<header>
+  <a href="/">xenol</a>
+  <nav>
+    <a href="/">home</a>
+    <a href="/about">about</a>
+    <% if (locals.isloggedin){%>
+    <a href="/logout">logout</a>
+    <%}else{ %>
+    <a href="/login">login</a>
+    <%}%>
+    <a href="/register">register</a>
+  </nav>
+</header>

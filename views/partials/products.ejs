@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>products</title>
+  </head>
+  <body>
+    <h1>All products</h1>
+    <%products.forEach(product => {%>
+    <h2>
+      <span> <%=product.product_id %> </span>
+      <span style="color: blue"> <%=product.product_name %> </span>
+      <span> <%=product.price%> </span>
+      <form action="" style="display" :inline; method="post">
+        <input type="submit" value="DELETE" />
+      </form>
+    </h2>
+
+    <%})%>
+  </body>
+</html>
